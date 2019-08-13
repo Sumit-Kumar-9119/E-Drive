@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="E-drive.Master.cs" Inherits="E_drive" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>E-Drive</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+        
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>    
+            <!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="Home.aspx" class="logo">E-Drive</a>
+					<nav id="nav">
+						<a href="Home.aspx">Home</a>
+						<a href="signin.aspx">Sign-in</a>
+						<a href="signup.aspx">Sign-up</a>
+                        <a href="Contact.aspx">Contact</a>
+                        <a href="help.aspx">Help</a>
+					</nav>
+				</div>
+			</header>
+
+    <!-- Menu bars for mobile devices-->
+    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			
+    <div>
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <section>
+        <asp:ContentPlaceHolder ID="footers" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </section>
+    
+       <%-- <section id="footer">
+				<div class="inner">
+					<header>
+						<h2>Get in Touch</h2>
+					</header>
+					<form method="post" action="thanks.aspx" runat="server">
+						<div class="field half first">
+							<label id="lblname" runat="server">Name</label>
+							
+                            <asp:TextBox runat="server" ID="msgname"></asp:TextBox>
+						</div>
+						<div class="field half">
+							<label id="lblemail" runat="server" >Email</label>
+                           
+                            <asp:TextBox runat="server" ID="msgemail"></asp:TextBox>
+						</div>
+						<div class="field">
+							<label id="lblmessage" runat="server">Message</label>
+							
+                            <asp:TextBox runat="server" ID="msgmessage" Height="200px"></asp:TextBox>
+						</div>
+						<ul class="actions">
+							<li>
+                                <asp:Button runat="server" ID="sendmessage" Text="Send Message" CssClass="alt"  OnClick="sendmessage_Click"/>
+							</li>
+						</ul>
+					</form>
+					<div class="copyright">	&copy;  E-Drive.in An ISO 9000 2019 certified </div>
+				</div>
+			</section>--%>
+    
+        <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+ 
+</body>
+</html>
